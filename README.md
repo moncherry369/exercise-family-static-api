@@ -162,7 +162,14 @@ RESPONSE (content_type: application/json):
 
 status_code: 200 if success. 400 if bad request (wrong info) screw up, 500 if the server encounter an error
 
-body: empty
+body: //the memeber's json object
+
+{
+    "id": Int,
+    "first_name": String,
+    "age": Int,
+    "lucky_numbers": List
+}
 ```
 
 Keep in mind that POST request data dictionary may contain a key and a value for this new member `id`.
